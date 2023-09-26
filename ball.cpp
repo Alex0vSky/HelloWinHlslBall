@@ -321,7 +321,7 @@ template<> class ball<DxVer::v12> : public CurClientApp<DxVer::v12> {
 		crpsoDynamic ->m_pcCommandList ->ClearRenderTargetView( crpsoDynamic ->m_stRtvHandle, ClearColor, 0, nullptr );
 		// Renew timer value
 		m_puoConstBufAccessor ->passToShader(
-				crpsoDynamic ->m_pcCommandList
+				crpsoDynamic ->m_uFrameIndex
 				, [this](PS_CONST_BUFF *p) { 
 					p ->iTime = m_oTimer.get( );
 				}
