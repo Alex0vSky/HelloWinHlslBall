@@ -1,6 +1,8 @@
 // pixel shader
-cbuffer PerFrameConstants : register (b0) { float iTime; }
-cbuffer PerFrameConstants : register (b1) { float2 iResolution; }
+cbuffer ConstantBuffer : register(b0) {
+	float iTime;
+	float2 iResolution;
+};
 
 static const bool bFromBottomToTop = true;
 

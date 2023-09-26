@@ -3,10 +3,10 @@
 using namespace prj_3d::HelloWinHlsl;
 using namespace prj_3d::HelloWinHlsl::ClientTy;
 
-using CurDxVer = DxVer::v9;
+//using CurDxVer = DxVer::v9;
 //using CurDxVer = DxVer::v10;
 //using CurDxVer = DxVer::v11;
-//using CurDxVer = DxVer::v12;
+using CurDxVer = DxVer::v12;
 
 template<class T> class ball; // primary template
 
